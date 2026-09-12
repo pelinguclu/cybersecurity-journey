@@ -3,17 +3,17 @@
 
 A Bash script designed to monitor Linux system performance and resource utilization .
 
-the project focuses on practical Linuc dydtem administration , Bash scripting and basic security-oriented system 
+The project focuses on practical Linux system administration, Bash scripting and basic security-oriented system 
 monitoring .
 
 
 ## Features
 
-- ** System Information:** Hostname ,operating system,uptime,and current timestap 
-- ** CPU & Memory:** CPU status and RAM/Swap usage.
-- ** Disk Usage:** Root partition monitoring .
-- ** Process Managment:** total running processes and top CPU/memory-cobsuming processes.
-- ** Readable Output:** Organized output terminal for easier sysytem monitoring.
+- ** System Information:** Hostname, operating system, uptime,and current timestamp. 
+- ** CPU & Memory:**CPU status and RAM/Swap usage.
+- ** Disk Usage:** Root partition monitoring.
+- ** Process Management:** total running processes and top CPU/memory-consuming processes.
+- ** Readable Output:** Organized terminal output  for easier system monitoring.
 
 
 # Technologies 
@@ -32,15 +32,17 @@ monitoring .
 
 
 # Usage 
-Make the script execurable and run it:
+Make the script executable  and run it:
 
 """bash 
-chmod +x server-stats.sh 
+
+chmod +x server-stats.sh
+ 
 ./server-stats.sh 
 """
 
 
-## Ezample Output
+## Example Output
 
 
 ------------------------------------
@@ -69,13 +71,14 @@ Swap:          3.8Gi          0B       3.8Gi
 ------------------------------
         Disk Usage            
 ------------------------------
+'''
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda2        34G   15G   18G  46% /
-
+'''
 ------------------------------
          Processes            
 ------------------------------
-Total  Running Processes:232
+Total  Running Processes: 232
 
 Top CPU Consuming Processes: 
     PID %CPU CMD
@@ -85,7 +88,7 @@ Top CPU Consuming Processes:
    3482  2.2 /usr/bin/bash
    2557  0.5 /usr/bin/ibus-daemon --panel disable
 
-Top Memory Consuming Processes :
+Top Memory Consuming Processes:
     PID %MEM CMD
       2  0.0 [kthreadd]
       3  0.0 [pool_workqueue_release]
@@ -100,7 +103,7 @@ Top Memory Consuming Processes :
 
 - Practiced Bash scripting on Linux.
 -Learned how to retrieve and display system resource information.
-- Practiced working with CPU,memory,disk and process information. 
+- Practiced working with CPU, memory, disk and process information. 
 - Used Linux commands and pipelines to process command output.
 - Improved my understanding of basic Linux system monitoring.
 
@@ -108,7 +111,7 @@ Top Memory Consuming Processes :
 
 ## Future Improvements 
 
-- Add configurable CPU, memory,and disk usage thresholds.
+- Add configurable CPU, memory, and disk usage thresholds.
 - Add warning messages when resource usage exceeds defined limits.
 - Export monitoring results to a log file. 
 - Add more system health checks.
